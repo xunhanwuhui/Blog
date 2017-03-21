@@ -1,5 +1,32 @@
 <!DOCTYPE html>
 <html>
-<title>我的个人博客</title>
-这是内容
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <style>
+  body{
+    padding:16px;
+  }
+  </style>
+  <meta charset="utf-8">
+  <title>个人博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js">
+  </script>
+</head>
+<body>
+  <div id="content">
+    # 我的第一篇博客
+    **Macife** 
+    >不要相信网上的名人名言--鲁迅
+    大家好，今天我学会了Markdown。
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490106678536&di=bf4455feb1a256f67a038bd325bd93ca&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%3D580%2Fsign%3D6cc933cec61b9d168ac79a69c3deb4eb%2Fe388e918972bd4072ff572ec73899e510fb30919.jpg" width=300>
+    
+  </div>
+  <script>
+     var content = document.getElementById('content')
+     var markdown = content.innerHTML
+     var html = marked(markdown)
+     content.innerHTML = html;
+  </script>
+</body>
 </html>
